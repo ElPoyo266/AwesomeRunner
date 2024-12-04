@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Health))]
@@ -64,10 +63,6 @@ public class Player : MonoBehaviour,IResettable, ICommandTranslator
     {
         PlayerHealth.OnOutOfHealth += Die;
     }
-    // private void OnDisable()
-    // {
-    //     PlayerHealth.OnOutOfHealth -= Die;
-    // }
     // private void OnDisable()
     // {
     //     PlayerHealth.OnOutOfHealth -= Die;
